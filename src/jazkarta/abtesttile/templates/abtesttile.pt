@@ -24,7 +24,7 @@
                     tile_a.setAttribute('style',"display:none")
                 }
             })();
-        <tal:tag replace="structure string:</script>"/>        
+        <tal:tag replace="structure string:</script>"/>
     </div>
   </body>
 </html>
