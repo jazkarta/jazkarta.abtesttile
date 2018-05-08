@@ -6,34 +6,23 @@
 jazkarta.abtesttile
 ===================
 
-Tell me what your product does
+This Plone addon provides a new Tile type for Mosaic Layout views.
+It is a variation on a RichText tile which provides two WYSIWYG HTML
+fields. It will randomly show one of the two HTML fields based on a
+weighted ratio, for the purpose of A/B testing parts of a page layout.
 
 Features
 --------
 
-- Can be bullet points
+- Includes optional support for custom JS to run with each rendered
+  HTML option.
 
+- Includes optional support for adding a campaign query string variable
+  to any links in the rendered HTML, indicating whether option A or B
+  was the source for analytics tracking.
 
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+- Provides a custom permision to restrict adding and editing of A/B
+  Test Tiles to more privileged users.
 
 Installation
 ------------
@@ -56,14 +45,12 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/jazkarta.abtesttile/issues
 - Source Code: https://github.com/collective/jazkarta.abtesttile
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, please let us know at <info@jazkarta.com>
 
 
 License
