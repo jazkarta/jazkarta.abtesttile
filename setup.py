@@ -14,13 +14,14 @@ long_description = '\n\n'.join([
 
 setup(
     name='jazkarta.abtesttile',
-    version='1.0a1',
-    description="An add-on for Plone",
+    version='1.0',
+    description="Plone Mosaic Tile for A/B Testing content changes",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
+        "Framework :: Plone :: 4.3",
         "Framework :: Plone :: 5.0",
         "Framework :: Plone :: 5.1",
         "Programming Language :: Python",
@@ -28,7 +29,7 @@ setup(
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
-    keywords='Python Plone',
+    keywords='Python Plone analytics',
     author='jazkarta',
     author_email='info@jazkarta.com',
     url='https://pypi.python.org/pypi/jazkarta.abtesttile',
