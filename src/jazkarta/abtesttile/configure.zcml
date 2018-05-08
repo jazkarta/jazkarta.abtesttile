@@ -47,6 +47,7 @@
       class=".tile.ABTestTile"
       for="*"
       permission="zope.Public"
+      layer=".interfaces.IJazkartaAbtesttileLayer"
       add_permission="jazkarta.abtesttile.EditABTestTile"
       edit_permission="jazkarta.abtesttile.EditABTestTile"
       template="templates/abtesttile.pt"
