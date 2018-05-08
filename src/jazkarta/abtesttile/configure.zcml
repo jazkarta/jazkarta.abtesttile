@@ -13,6 +13,8 @@
   -->
   <!--<includeDependencies package="." />-->
 
+  <include file="permissions.zcml" />
+
   <include file="upgrades.zcml" />
 
   <genericsetup:registerProfile
@@ -42,10 +44,11 @@
       name="jazkarta.abtesttile.abtesttile"
       title="AB Test Tile"
       description="A tile which provides two layouts and the ability to randomly switch between them"
-      add_permission="cmf.ModifyPortalContent"
       class=".tile.ABTestTile"
       for="*"
       permission="zope.Public"
+      add_permission="jazkarta.abtesttile.EditABTestTile"
+      edit_permission="jazkarta.abtesttile.EditABTestTile"
       template="templates/abtesttile.pt"
       schema=".tile.IABTestTile"
       />
