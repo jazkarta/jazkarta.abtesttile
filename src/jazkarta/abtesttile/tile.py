@@ -13,11 +13,10 @@ class IABTestTile(model.Schema):
 
     text_a = RichText(
         title=_(u'Text A'),
-        required=False,
         allowed_mime_types=('text/html',),
         default_mime_type='text/html',
         output_mime_type='text/x-html-safe',
-        default=u'')
+        required=True)
 
     script_a = schema.Text(
         title=_(u'Script A'),
@@ -28,11 +27,10 @@ class IABTestTile(model.Schema):
 
     text_b = RichText(
         title=_(u'Text B'),
-        required=False,
         allowed_mime_types=('text/html',),
         default_mime_type='text/html',
         output_mime_type='text/x-html-safe',
-        default=u'')
+        required=True)
 
     script_b = schema.Text(
         title=_(u'Script B'),
