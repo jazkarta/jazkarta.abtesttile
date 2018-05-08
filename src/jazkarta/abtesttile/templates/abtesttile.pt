@@ -9,9 +9,9 @@
   <body>
     <div tal:define="id string:ab-tile-${view/id}"
          tal:attributes="id id">
-        <div id="tile-a-${id}" class="tile-content" tal:content="structure view/data/text_a/output|nothing">
+        <div id="tile-a-${id}" class="tile-content" tal:content="structure view/text_a|nothing">
         </div>
-        <div id="tile-b-${id}" class="tile-content" tal:content="structure view/data/text_b/output|nothing" style="display:none;">
+        <div id="tile-b-${id}" class="tile-content" tal:content="structure view/text_b|nothing" style="display:none;">
         </div>
         <tal:tag replace="structure string:<script>"/>
             (function(){
@@ -20,8 +20,11 @@
                 if ( ratio <= rnd ) {
                     var tile_a = document.getElementById('tile-a-${id}');
                     var tile_b = document.getElementById('tile-b-${id}');
-                    tile_b.setAttribute('style',"")
-                    tile_a.setAttribute('style',"display:none")
+                    tile_b.setAttribute('style',"");
+                    tile_a.setAttribute('style',"display:none");
+                    ${view/data/script_b|string}
+                } else {
+                    ${view/data/script_a|string}
                 }
             })();
         <tal:tag replace="structure string:</script>"/>
