@@ -50,7 +50,7 @@ Contribute
 Support
 -------
 
-If you are having issues, please let us know at <info@jazkarta.com>
+If you are having issues, please let us know at info<at>jazkarta.com
 
 
 License
