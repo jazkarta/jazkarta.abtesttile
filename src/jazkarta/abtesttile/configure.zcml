@@ -13,8 +13,8 @@
   -->
   <!--<includeDependencies package="." />-->
 
+  <include package="plone.tiles" file="meta.zcml" />
   <include file="permissions.zcml" />
-
   <include file="upgrades.zcml" />
 
   <genericsetup:registerProfile

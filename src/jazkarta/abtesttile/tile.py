@@ -48,8 +48,10 @@ class IABTestTile(model.Schema):
 
     campaign_marker = schema.Bool(
         title=_(u'Add campaign marker query string to all link urls'),
-        description=_(u'Adds a query string variable "ab_campaign=a-${id}" '
-                     u' or "ab_campaign=b-${id}" to all urls in the html fields.'),
+        description=_(
+            u'Adds a query string variable "ab_campaign=a-${id}" '
+            u' or "ab_campaign=b-${id}" to all urls in the html fields.'
+        ),
         default=False)
 
 
